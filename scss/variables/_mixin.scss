@@ -1,0 +1,22 @@
+@mixin background($imgPath, $position:50% 50%, $repeat: no-repeat) {
+    background: {
+        image: url($imgPath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+@mixin listStyle {
+    list-style: none;
+    padding: 0
+}
+
+@mixin anchorText($textDecoration: none, $color: #ffffff) {
+    text-decoration: $textDecoration;
+    color: $color;
+}
+
+@mixin displayFlex($display: flex, $justifyContent: space-between) {
+    display: $display;
+    justify-content: $justifyContent;
+}

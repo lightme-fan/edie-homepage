@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Heebo-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Heebo-Bold"), local("Heebo-Bold"), url("../fonts/Heebo-Bold.woff2") format("woff2"), url("../fonts/Heebo-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Heebo-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Heebo-Regular"), local("Heebo-Regular"), url("../fonts/Heebo-Regular.woff2") format("woff2"), url("../fonts/Heebo-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Poppins-Bold"), local("Poppins-Bold"), url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins-Regular"), local("Poppins-Regular"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"); }
+
+body {
+  font-family: 'Poppins-Regular';
+  font-weight: 400;
+  margin: 0; }
+
+header, main {
+  padding: 1rem; }
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333; }
+
+img {
+  border-radius: 24px;
+  width: 100%; }
+
+.menu_checkbox {
+  display: none; }
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+
+.heading__text {
+  font-family: 'Heebo-bold';
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px; }
+
+.heading__label {
+  color: transparent;
+  background-image: url("../icons/menu.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 55%; }
+
+.nav--menu {
+  position: absolute;
+  width: 75%;
+  height: 572px;
+  background-color: black;
+  left: -100%; }
+
+.nav--menu_list {
+  list-style: none;
+  padding: 0; }
+
+input[type="checkbox"]:checked ~ .heading .nav--menu {
+  left: 0; }
+
+body:focus ~ .nav--menu {
+  left: -100%; }
+
+.nav--menu_list {
+  text-align: center; }
+
+.nav--menu_list-item {
+  margin-top: 2rem; }
+
+.nav--menu_list-anchor {
+  text-decoration: none;
+  color: #ffffff; }
+
+.website__cue {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2D9CDB; }
+
+.website__pic {
+  height: calc(100% * 145 / 348); }

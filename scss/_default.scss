@@ -1,0 +1,27 @@
+@import './variables/font-face';
+
+body {
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    margin: 0;
+}
+
+header, main {
+    padding: 1rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+}
+
+img {
+    border-radius: 24px;
+    width: 100%;
+}
+
+.menu_checkbox {
+    display: none;
+}

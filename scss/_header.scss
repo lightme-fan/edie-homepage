@@ -1,0 +1,54 @@
+@import './variables/font-face';
+@import './variables/variables';
+@import './variables/mixin';
+
+.heading {
+  @include displayFlex;  
+  position: $relativePosition;
+}
+
+.heading__text {
+    font-family: 'Heebo-bold';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.heading__label {
+    color: transparent;
+    @include background('../icons/menu.svg');
+    cursor: pointer;
+    background-size: 55%;
+}
+
+.nav--menu {
+    position: $absolutePosition;
+    width: 75%;
+    height: 572px;
+    background-color: black;
+    left: -100%
+}
+
+.nav--menu_list {
+    @include listStyle;
+}
+
+input[type="checkbox"]:checked ~ .heading .nav--menu {
+    left: 0;
+}
+
+body:focus ~ .nav--menu {
+   left: -100% 
+}
+
+.nav--menu_list {
+    text-align: center;
+}
+
+.nav--menu_list-item {
+    margin-top: 2rem;
+}
+
+.nav--menu_list-anchor {
+    @include anchorText;   
+}
