@@ -31,28 +31,34 @@ header, main {
   padding: 1rem; }
 
 h2 {
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 24px;
   line-height: 36px;
   color: #333333; }
+
+.menu_checkbox {
+  display: none; }
+
+.container {
+  margin: auto;
+  max-width: 100%; }
 
 img {
   border-radius: 24px;
   width: 100%; }
 
-.menu_checkbox {
-  display: none; }
-
 .heading {
   display: flex;
   justify-content: space-between;
-  position: relative; }
+  position: relative;
+  padding-top: 0;
+  margin-top: -1rem; }
 
 .heading__text {
   font-family: 'Heebo-bold';
   font-weight: 800;
-  font-size: 24px;
-  line-height: 35px; }
+  font-size: 36px;
+  line-height: 53px; }
 
 .heading__label {
   color: transparent;
@@ -97,3 +103,90 @@ body:focus ~ .nav--menu {
 
 .website__pic {
   height: calc(100% * 145 / 348); }
+
+.purpose__desc {
+  font-size: 12px;
+  line-height: 18px;
+  color: #4F4F4F; }
+
+.purpose__form--text {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #828282;
+  margin: 0; }
+
+.purpose__form--label {
+  position: relative;
+  height: 57px;
+  background: #F2F2F2;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 21px;
+  padding-right: 4px; }
+
+.purpose__form--input {
+  background: #F2F2F2;
+  padding-right: 0;
+  border: none; }
+
+.purpose__form--btn {
+  width: 94px;
+  height: 49px;
+  background: #2D9CDB;
+  border-radius: 12px;
+  border: none;
+  align-self: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F2F2F2; }
+
+.offer {
+  margin-top: 102px; }
+
+.offer__card {
+  margin-top: 92px; }
+
+.offer__card--active {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.offer__card--heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333; }
+
+.offer__desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F; }
+
+.offer__card--btn {
+  border: none;
+  background: #E0E0E0;
+  border-radius: 12px;
+  padding: 9px; }
+
+.offer__btn--active {
+  background: #2D9CDB; }
+
+.offer__card--img {
+  width: 30px;
+  height: 30px;
+  border-radius: 16px;
+  padding: 10px; }
+
+.design {
+  background: #2D9CDB; }
+
+.frontend {
+  background: #27AE60; }
+
+.backend {
+  background: #EB5757; }

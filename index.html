@@ -25,20 +25,59 @@
 
     <main class="main">
       <article class="website">
-        <p class="website__cue">Unhappy with your website?</p>
-        <h2 class="website__heading">We create beautiful and fast web services</h2>
+        <div class='website__container'>
+          <p class="website__cue">Unhappy with your website?</p>
+          <h2 class="website__heading">We create beautiful and fast web services</h2>
+        </div>
         <img class="website__pic src=" src="./images/heroImage.jpg" alt="Hero image">
       </article>
 
       <article class="purpose">
-        <h2></h2>
-        <p></p>
-        <form>
-          <label>
-            <input type="text"/>
-            <button></button>
-          </label>
-        </form>
+        <div class='purpose__container'>
+          <h2 class="purpose__heading">Story, emotion and purpose</h2>
+          <p class="purpose__desc">
+            We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+          </p>
+          <form class="purpose__form">
+            <p class="purpose__form--text">Want us to contact you?</p>
+            <label class="purpose__form--label">
+              <input class="purpose__form--input" type="text" placeholder="Email"/>
+              <button class="purpose__form--btn">Join</button>
+            </label>
+          </form>
+        </div>
+      </article>
+
+      <article class='offer'>
+        <div class='offer__container'>
+          <h2 class='offer__heading'>We offer high demand services</h2>
+          <div class='offer__cards'>
+            <section class='offer__card'>
+              <img class='offer__card--img design' src="./icons/edit.svg" alt="design"/>              
+              <h3 class='offer__card--heading'>UI/UX Design</h3>
+              <p class='offer__desc'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button class='offer__card--btn'>Get started</button>
+            </section>
+            <section class='offer__card offer__card--active'>
+              <img class='offer__card--img frontend' src="./icons/tag.svg" alt="tag"/>
+              <h3 class='offer__card--heading'>UI/UX Design</h3>
+              <p class='offer__desc'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button class='offer__card--btn offer__btn--active'>Get started</button>
+            </section>
+            <section class='offer__card'>
+              <img class='offer__card--img backend' src="./icons/back-end.svg" alt="front end"/>
+              <h3 class='offer__card--heading'>Back End</h3>
+              <p class='offer__desc'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button class='offer__card--btn'>Get started</button>
+            </section>
+          </div>
+        </div>
       </article>
     </main>
   </body>

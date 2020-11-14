@@ -1,0 +1,50 @@
+@import './variables/font-face';
+@import './variables/mixin';
+@import './variables/variables';
+
+.purpose__desc {
+    // font-size: 18px;
+    // line-height: 27px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4F4F4F;
+}
+
+.purpose__form--text {
+    font-weight: 500;
+    // font-size: 14px;
+    // line-height: 21px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #828282;
+    margin: 0;
+}
+
+.purpose__form--label {
+    position: $relativePosition;
+    height: 57px;
+    background: #F2F2F2;
+    border-radius: 12px;
+    @include displayFlex;
+    padding-left: 21px;
+    padding-right: 4px;
+}
+
+.purpose__form--input {
+    background: #F2F2F2;
+    padding-right: 0;
+    border: none;
+}
+
+.purpose__form--btn {
+    width: 94px;
+    height: 49px;
+    background: #2D9CDB;
+    border-radius: 12px;
+    border: none;
+    align-self: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F2F2F2;
+}

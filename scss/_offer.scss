@@ -1,0 +1,58 @@
+.offer {
+    margin-top: 102px;
+}
+
+.offer__card {
+    margin-top: 92px;
+}
+
+.offer__card--active {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.offer__card--heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+}
+
+.offer__desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.offer__card--btn {
+    border: none;
+    background: #E0E0E0;
+    border-radius: 12px;
+    padding: 9px;
+}
+
+.offer__btn--active {
+    background: #2D9CDB;
+}
+
+.offer__card--img {
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.design {
+    background: #2D9CDB;
+}
+
+.frontend {
+    background: #27AE60;
+}
+
+.backend {
+    background: #EB5757;
+}
