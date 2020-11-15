@@ -37,3 +37,21 @@ img {
 .website__container, .purpose__container, .offer__container, .designs--heading {
     margin-left: 40px;
 }
+
+@media(min-width: 857px) {
+    h2 {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    .website__container, .purpose__container {
+        max-width: 543px;
+        padding-left: 227px;
+    }
+
+    .designs, .meeting, .footer {
+        max-width: 80%;
+        margin: auto;
+    }
+}

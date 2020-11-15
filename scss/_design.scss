@@ -32,3 +32,41 @@
     @include anchorText;
     color: #2D9CDB;
 }
+
+@media(min-width: 857px) {
+    .designs {
+        &--heading {
+            width: 448px;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 54px;
+        }
+    }
+
+    .designs--card {
+        @include displayGrid;
+        grid-template-areas: 
+            'first third'
+            'second fourth'
+        ;
+    }
+
+    .design--card {
+        height: calc(545px + 188px)
+    }
+
+    .design__first {
+        grid-area: first;
+    }
+
+    .design__second {
+        grid-area: second;
+    }
+    .design__third {
+        grid-area: third;
+    }
+
+    .design__fourth {
+        grid-area: fourth;
+    }
+}

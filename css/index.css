@@ -51,6 +51,18 @@ img {
 .website__container, .purpose__container, .offer__container, .designs--heading {
   margin-left: 40px; }
 
+@media (min-width: 857px) {
+  h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px; }
+  .website__container, .purpose__container {
+    max-width: 543px;
+    padding-left: 227px; }
+  .designs, .meeting, .footer {
+    max-width: 80%;
+    margin: auto; } }
+
 .heading {
   display: flex;
   justify-content: space-between;
@@ -100,6 +112,35 @@ body:focus ~ .nav--menu {
   text-decoration: none;
   color: #ffffff; }
 
+@media (min-width: 857px) {
+  .heading {
+    margin: 0; }
+  .heading__text {
+    margin: 0; }
+  .nav--menu {
+    position: unset;
+    background-color: #ffffff;
+    padding-top: 0;
+    height: 0; }
+  .nav--menu_list {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-top: 9px; }
+  .nav--menu_list-anchor {
+    color: #333333;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px; }
+  .heading__label {
+    display: none; }
+  .nav--menu_list-item {
+    margin-top: 0;
+    margin-right: 3rem; }
+  .nav--menu_list-item:last-of-type {
+    margin-right: 0; } }
+
 .website__cue {
   font-weight: 500;
   font-size: 12px;
@@ -147,6 +188,13 @@ body:focus ~ .nav--menu {
   font-size: 18px;
   line-height: 27px;
   color: #F2F2F2; }
+
+@media (min-width: 857px) {
+  .purpose__container {
+    width: 366px; }
+  .purpose__desc {
+    font-size: 18px;
+    line-height: 27px; } }
 
 .offer {
   margin-top: 102px; }
@@ -203,6 +251,22 @@ body:focus ~ .nav--menu {
   line-height: 24px;
   color: #4F4F4F; }
 
+@media (min-width: 857px) {
+  .offer__heading {
+    width: 346px;
+    font-size: 36px;
+    line-height: 54px;
+    padding-left: 80px; }
+  .offer__cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto; }
+  .offer__card {
+    width: 259px;
+    padding-top: 3rem;
+    margin-top: 0; } }
+
 .designs {
   margin-top: 146px; }
 
@@ -228,6 +292,28 @@ body:focus ~ .nav--menu {
   text-decoration: none;
   color: #ffffff;
   color: #2D9CDB; }
+
+@media (min-width: 857px) {
+  .designs--heading {
+    width: 448px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px; }
+  .designs--card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 'first third' 'second fourth'; }
+  .design--card {
+    height: calc(545px + 188px); }
+  .design__first {
+    grid-area: first; }
+  .design__second {
+    grid-area: second; }
+  .design__third {
+    grid-area: third; }
+  .design__fourth {
+    grid-area: fourth; } }
 
 .meeting, .meeting--section, .customer {
   margin-top: 100px;
@@ -276,6 +362,25 @@ body:focus ~ .nav--menu {
   font-size: 18px;
   line-height: 27px;
   color: #EB5757; }
+
+@media (min-width: 857px) {
+  .meeting--section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-columns: 280px 1fr;
+    gap: 120px; }
+  .meeting--heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 0; }
+  .meeting--content {
+    padding-top: 4rem; }
+  .customer--header {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px; } }
 
 .footer {
   background: #100E1D;

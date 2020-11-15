@@ -3,8 +3,6 @@
 @import './variables/variables';
 
 .purpose__desc {
-    // font-size: 18px;
-    // line-height: 27px;
     font-size: 12px;
     line-height: 18px;
     color: #4F4F4F;
@@ -12,8 +10,6 @@
 
 .purpose__form--text {
     font-weight: 500;
-    // font-size: 14px;
-    // line-height: 21px;
     font-size: 10px;
     line-height: 15px;
     color: #828282;
@@ -47,4 +43,15 @@
     font-size: 18px;
     line-height: 27px;
     color: #F2F2F2;
+}
+
+@media(min-width: 857px) {
+    .purpose__container {
+        width: 366px;
+    }
+
+    .purpose__desc {
+        font-size: 18px;
+        line-height: 27px;
+    }
 }

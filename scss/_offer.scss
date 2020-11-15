@@ -66,3 +66,26 @@
         color: #4F4F4F;
     }
 }
+
+@media(min-width: 857px) {
+    .offer{
+        &__heading {
+            width: 346px;
+            font-size: 36px;
+            line-height: 54px;
+            padding-left: 80px;
+        }
+
+        &__cards {
+            @include displayFlex;
+            max-width: 80%;
+            margin: auto;
+        }
+    
+        &__card {
+            width: 259px;
+            padding-top: 3rem;
+            margin-top: 0;
+        }
+    }
+}

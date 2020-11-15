@@ -55,3 +55,49 @@ body:focus ~ .nav--menu {
 .nav--menu_list-anchor {
     @include anchorText;   
 }
+
+@media(min-width: 857px) {
+    .heading {
+        margin: 0;
+    }
+
+    .heading__text {
+        margin: 0;
+    }
+
+    .nav--menu {
+        position: unset;
+        background-color: #ffffff;
+        padding-top: 0;
+        height: 0;
+    }
+
+    .nav--menu_list {
+        @include displayFlex;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        margin-top: 9px;
+        // padding-left: 40%;
+    }
+
+    .nav--menu_list-anchor {
+        color: #333333;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .heading__label {
+        display: none;
+    }
+
+    .nav--menu_list-item {
+        margin-top: 0;
+        margin-right: 3rem;
+    }
+
+    .nav--menu_list-item:last-of-type {
+        margin-right: 0;
+    }
+    
+}
