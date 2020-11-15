@@ -1,0 +1,71 @@
+@import './variables/font-face';
+@import './variables/variables';
+@import './variables/mixin';
+
+.footer {
+    background: #100E1D;
+    padding: 42px;
+}
+
+.nav--list {
+    @include listStyle;
+}
+
+.nav--list-item {
+    margin: 1rem;
+}
+
+.footer__social-media {
+    columns: 1;
+}
+
+.social-media--heading {
+    color: #ffffff;
+    padding-left: 1rem;
+}
+
+.social-media--list {
+    @include listStyle;
+    @include displayFlex;
+    justify-content: start;
+    margin-left: -3.5rem;
+    margin-bottom: 65px;
+}
+
+.social-media--item {
+    margin-right: 1rem;
+}
+
+.list-anchor {
+    @include anchorText;
+    color: transparent;
+    padding: 7px;
+    background-position: unset;
+}
+
+.instagram {
+   @include background('./../icons/instagram.svg');
+   background-position: 100%;
+}
+
+.in {
+    @include background('./../icons/linkedin.svg'); 
+}
+
+.twitter {
+    @include background('./../icons/twitter.svg');
+   background-position: 0;
+}
+
+.purpose__form--label {
+    margin-bottom: 133px;
+}
+
+.challenge {
+    text-align: center;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}

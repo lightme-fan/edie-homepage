@@ -1,9 +1,12 @@
 @import './variables/font-face';
+@import './variables/mixin';
+@import './variables/variables';
 
 body {
     font-family: 'Poppins-Regular';
     font-weight: 400;
     margin: 0;
+    position: $relativePosition;
 }
 
 header, main {
@@ -29,4 +32,8 @@ h2 {
 img {
     border-radius: 24px;
     width: 100%;
+}
+
+.website__container, .purpose__container, .offer__container, .designs--heading {
+    margin-left: 40px;
 }

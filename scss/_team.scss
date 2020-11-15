@@ -1,0 +1,60 @@
+@import './variables/font-face';
+@import './variables/variables';
+@import './variables/mixin';
+
+.meeting, .meeting--section, .customer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.team {
+    @include displayGrid;
+    grid-template-areas: 
+        'person3 person1'
+        'person3 person2'
+    ;    
+}
+
+.person1 {
+    grid-area: person1;
+}
+
+.person2 {
+    grid-area: person2;
+}
+
+.person3 {
+    grid-area: person3;
+    align-self: center;
+}
+
+.customer--header {
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+}
+
+.profile {
+    @include displayGrid;
+    gap: 0;
+}
+
+.profile--photo {
+    width: 60px;
+    border-radius: 12px;
+}
+
+.profile--name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #333333;
+}
+
+.meeting--the_team {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #EB5757;
+}

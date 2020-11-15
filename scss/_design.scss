@@ -1,0 +1,34 @@
+@import './variables/font-face';
+@import './variables/variables';
+@import './variables/mixin';
+
+.designs {
+    margin-top: 146px;
+}
+
+.design--card {
+    margin-top: 36px;
+}
+
+.design__desc {
+    margin: 0;
+}
+
+.design__type {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #828282;
+}
+
+.design__desc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+}
+
+.more--link {
+    @include anchorText;
+    color: #2D9CDB;
+}

@@ -26,9 +26,10 @@
 .nav--menu {
     position: $absolutePosition;
     width: 75%;
-    height: 572px;
+    height: 494px;
     background-color: black;
-    left: -100%
+    left: -100%;
+    padding-top: 4rem;
 }
 
 .nav--menu_list {

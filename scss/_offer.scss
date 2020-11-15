@@ -12,6 +12,7 @@
     padding: 1rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-left: -43px;
 }
 
 .offer__card--heading {
@@ -36,6 +37,7 @@
 
 .offer__btn--active {
     background: #2D9CDB;
+    color: #fff;
 }
 
 .offer__card--img {
@@ -55,4 +57,12 @@
 
 .backend {
     background: #EB5757;
+}
+
+.offer__card {
+    &_.offer__desc {
+        font-size: 16px;
+        line-height: 24px;
+        color: #4F4F4F;
+    }
 }

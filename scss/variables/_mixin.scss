@@ -20,3 +20,9 @@
     display: $display;
     justify-content: $justifyContent;
 }
+
+@mixin displayGrid($display: grid, $columns: 1fr 1fr, $gap: 10px) {
+    display: $display;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
